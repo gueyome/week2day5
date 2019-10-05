@@ -7,9 +7,9 @@ journalists = ["@jcunniet","@PaulLampon","@Aziliz31","@ssoumier","@marionsouzeau
 
 # EXERCICE 2
 
-#puts "Combien d'handle contiennent un numéro ?"
-#number_count = journalists.count { |x| /[0..9]/.match(x) } 
-#puts "> #{number_count} handles contiennent un numéro"
+puts "Combien d'handle contiennent un numéro ?"
+number_count = journalists.count { |x| x.include?("1") || x.include?("2") || x.include?("3") || x.include?("4") || x.include?("5") || x.include?("6") || x.include?("7") || x.include?("8") || x.include?("9") } 
+puts "> #{number_count} handles contiennent un chiffre"
 
 # EXERCICE 3
 
@@ -70,5 +70,5 @@ puts "> #{aude_count} handles contiennent ces 4 lettres à la suite"
 #puts journalist_order_short [0..50]
 
 # EXERCICE 9
-puts "Quelle est la position dans l'array de la personne @epenser ?"
-puts "@epenser est en position #{journalists.index("@epenser")}"
+#puts "Quelle est la position dans l'array de la personne @epenser ?"
+#puts "@epenser est en position #{journalists.index("@epenser")}"
